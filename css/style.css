@@ -518,7 +518,8 @@
   text-align: center;
 }
 
-.portfolio-title h1{
+.portfolio-title h2{
+  font-size: 36px;
   color: var(--primary);
 }
 
