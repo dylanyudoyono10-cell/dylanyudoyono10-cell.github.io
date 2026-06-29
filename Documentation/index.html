@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Template Documentation - Reyne Nathan</title>
+    <style>
+        :root {
+            --primary: #434343;
+            --accent: #E05638;
+            --bg-light: #f9f9f9;
+            --text-color: #333;
+            --code-bg: #2d2d2d;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            display: flex;
+            background-color: #fff;
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        /* Sidebar Navigation */
+        aside {
+            width: 280px;
+            background-color: var(--primary);
+            color: #fff;
+            position: fixed;
+            height: 100vh;
+            overflow-y: auto;
+            padding: 30px 20px;
+        }
+        aside h2 {
+            font-size: 22px;
+            margin-bottom: 25px;
+            color: var(--accent);
+            border-bottom: 2px solid #555;
+            padding-bottom: 10px;
+        }
+        aside ul {
+            list-style: none;
+        }
+        aside ul li {
+            margin-bottom: 12px;
+        }
+        aside ul li a {
+            color: #ddd;
+            text-decoration: none;
+            font-size: 15px;
+            display: block;
+            padding: 6px 10px;
+            border-radius: 4px;
+            transition: 0.2s;
+        }
+        aside ul li a:hover {
+            background-color: var(--accent);
+            color: white;
+        }
+        /* Main Content */
+        main {
+            margin-left: 280px;
+            padding: 40px 50px;
+            width: calc(100% - 280px);
+        }
+        header {
+            margin-bottom: 40px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 20px;
+        }
+        header h1 {
+            font-size: 32px;
+            color: var(--primary);
+        }
+        header p {
+            color: #666;
+            margin-top: 5px;
+        }
+        section {
+            margin-bottom: 50px;
+            scroll-margin-top: 40px;
+        }
+        section h2 {
+            font-size: 24px;
+            color: var(--primary);
+            margin-bottom: 15px;
+            border-left: 5px solid var(--accent);
+            padding-left: 12px;
+        }
+        p {
+            margin-bottom: 15px;
+            color: #444;
+        }
+        /* Structure & Tables */
+        .folder-tree {
+            background: var(--bg-light);
+            padding: 15px;
+            border-radius: 6px;
+            border: 1px solid #ddd;
+            font-family: 'Courier New', Courier, monospace;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        table th {
+            background-color: var(--primary);
+            color: white;
+        }
+        table tr:nth-child(even) {
+            background-color: var(--bg-light);
+        }
+        /* Code Blocks */
+        pre {
+            background-color: var(--code-bg);
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 6px;
+            overflow-x: auto;
+            margin: 15px 0;
+            font-size: 14px;
+        }
+        code {
+            font-family: 'Consolas', monospace;
+            background: #eee;
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: var(--accent);
+            font-size: 14px;
+        }
+        pre code {
+            background: none;
+            color: inherit;
+            padding: 0;
+        }
+        /* Callout Box */
+        .note {
+            background-color: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 20px 0;
+            color: #856404;
+        }
+        /* Responsive */
+        @media (max-width: 768px) {
+            body {
+                flex-direction: column;
+            }
+            aside {
+                position: relative;
+                width: 100%;
+                height: auto;
+                padding: 20px;
+            }
+            main {
+                margin-left: 0;
+                width: 100%;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- SIDEBAR NAVIGATION -->
+    <aside>
+        <h2>Guide</h2>
+        <ul>
+            <li><a href="#introduction">1. Introduction</a></li>
+            <li><a href="#structure">2. File Structure</a></li>
+            <li><a href="#customization">3. Content Customization</a></li>
+            <li><a href="#replacing-images">4. Replacing Images</a></li>
+            <li><a href="#features">5. Features & Animations</a></li>
+            <li><a href="#faq">6. FAQ</a></li>
+        </ul>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <header>
+            <h1>Portfolio Template Documentation</h1>
+            <p>Official Customization Guide for Reyne Nathan Portfolio Website v1.0</p>
+            <p><em>By: dylan.yudoyono &copy; 2026</em></p>
+        </header>
+
+        <!-- INTRODUCTION -->
+        <section id="introduction">
+            <h2>1. Introduction</h2>
+            <p>Thank you for purchasing this exclusive portfolio template! This website is built using standard modern web technologies: <strong>HTML5, CSS3, and Vanilla JavaScript</strong>. It also comes equipped with third-party libraries for smooth icons and animations.</p>
+            <p>The template is fully responsive (mobile-friendly) and completely ready to showcase your skills, tools, services, and portfolio projects in a highly professional manner.</p>
+        </section>
+
+        <!-- FILE STRUCTURE -->
+        <section id="structure">
+            <h2>2. File Structure</h2>
+            <p>Below is the organization of the folders and files included in your package. Please maintain this exact structure to ensure image paths and stylesheets function correctly:</p>
+            
+            <div class="folder-tree">
+                📦 Root Folder<br>
+                ├── 📁 Code/<br>
+                │   ├── 📄 index.html (Main HTML File)<br>
+                │   ├── 📄 style.css (Design & Styling)<br>
+                │   └── 📄 script.js (Navigation & Scroll Logic)<br>
+                └── 📁 Picture/<br>
+                │   ├── 📄 personal_photo.png (Main Profile Photo)<br>
+                │   ├── 📁 portfolio_image/<br>
+                │   │   └── 📄 portfolio.jpg (Default Project Image)<br>
+                │   └── 📁 Tools_Image/<br>
+                │       └── (excel.png, js.png, power_bi.png, python.png, sql.png, tableau.png)
+            </div>
+        </section>
+
+        <!-- CONTENT CUSTOMIZATION -->
+        <section id="customization">
+            <h2>3. Content Customization</h2>
+            <p>Open the <code>Code/index.html</code> file using your preferred text editor (such as VS Code, Notepad++, or Sublime Text) to edit the basic text layout.</p>
+            
+            <h3>A. Changing the Main Title / Name</h3>
+            <p>Locate the following block of code within the <code>&lt;div class="hero"&gt;</code> section and edit the text:</p>
+            <pre><code>&lt;h1&gt;
+Hello, i'm 
+&lt;br&gt;&lt;span&gt;Your Name Here&lt;/span&gt;
+&lt;/h1&gt;</code></pre>
+
+            <h3>B. Editing the About Me Section</h3>
+            <p>Find the <code>&lt;div id="about" class="about"&gt;</code> section to modify your short biography statement inside the <code>&lt;p&gt;</code> tags.</p>
+
+            <h3>C. Updating Social Media Links</h3>
+            <p>In the Footer section at the bottom of the page, replace the <code>#</code> symbol inside the <code>&lt;a href="#"&gt;</code> tags with your actual social media URLs:</p>
+            <pre><code>&lt;div class="social"&gt;
+    &lt;a href="https://instagram.com/yourusername"&gt;&lt;i class="fa-brands fa-instagram"&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;a href="https://linkedin.com/in/yourusername"&gt;&lt;i class="fa-brands fa-linkedin"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+        </section>
+
+        <!-- REPLACING IMAGES -->
+        <section id="replacing-images">
+            <h2>4. Replacing Images</h2>
+            <p>To completely personalize this website, you must update the image assets stored inside the <code>Picture/</code> directory.</p>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Image Component</th>
+                        <th>Location & Default Filename</th>
+                        <th>Recommended Format & Dimensions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Hero Profile Photo</strong></td>
+                        <td><code>Picture/personal_photo.png</code></td>
+                        <td>Transparent PNG (No Background), circular or square orientation.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Portfolio Project Images</strong></td>
+                        <td><code>Picture/portfolio_image/portfolio.jpg</code></td>
+                        <td>JPG/PNG, 16:9 Landscape Aspect Ratio (Recommended resolution: 800x450 pixels).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Skill Icons (Tools)</strong></td>
+                        <td><code>Picture/Tools_Image/</code></td>
+                        <td>Transparent PNG or square format with the logo perfectly centered.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="note">
+                <strong>💡 IMPORTANT TIP:</strong> The easiest way to swap images is to overwrite the old files with your new ones while keeping the <strong>exact same filename and file extension</strong> (e.g., replace the profile picture and name it <code>personal_photo.png</code>). If you use a different name or extension, remember to update the corresponding <code>&lt;img src="..."&gt;</code> tags inside your <code>index.html</code> file.
+            </div>
+        </section>
+
+        <!-- FEATURES & ANIMATIONS -->
+        <section id="features">
+            <h2>5. Features & Animations</h2>
+            <p>This website uses external plugins to create a dynamic user experience:</p>
+            <ul>
+                <li><strong>FontAwesome Icons:</strong> Handles the mobile hamburger menu, back-to-top arrow, and social icons. Loaded via a CDN script in the HTML header.</li>
+                <li><strong>AOS (Animate On Scroll):</strong> Generates smooth fade-in animations as you scroll down the page. Controlled directly using attributes like <code>data-aos="fade-up"</code>.</li>
+                <li><strong>Scroll to Top:</strong> An orange circular button that automatically appears in the bottom right corner once a user scrolls past 550px, offering an easy way to return to the header.</li>
+            </ul>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq">
+            <h2>6. Frequently Asked Questions (FAQ)</h2>
+            
+            <h3>Q: Why are my images or logo icons not showing up?</h3>
+            <p>A: Make sure your HTML file resides within the <code>Code/</code> folder and the <code>Picture/</code> folder is right outside next to it. The code loads images relatively via <code>../Picture/</code> (going back one directory first).</p>
+
+            <h3>Q: How do I add a new project card to the Portfolio section?</h3>
+            <p>A: Simply copy one of the existing <code>&lt;div class="box"&gt;</code> elements inside the main <code>&lt;div class="portfolio-box"&gt;</code> container, then update the internal text and image source.</p>
+
+            <h3>Q: Can I change the main accent color?</h3>
+            <p>A: Absolutely! Open up <code>style.css</code>, find the <code>:root</code> selector at the top, and edit the hex color codes assigned to variables like <code>--primary2</code>, <code>--hover</code>, or <code>--active</code> to match your brand identity.</p>
+        </section>
+    </main>
+
+</body>
+</html>
