@@ -550,7 +550,8 @@
 }
 
 .portfolio-box .portfolio-desc h2{
-  color: var(--primary2);
+  font-size: 36px;
+  color: var(--primary);
 }
 
 .portfolio-box .portfolio-desc p{
