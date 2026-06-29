@@ -49,6 +49,13 @@
   cursor: pointer;
 }
 
+.navbar-box .logo .logo-title {
+  font-size: 38px;
+  font-weight: bold;
+  color: var(--primary);
+  cursor: pointer;
+}
+
 .navbar-box .menu {
   display: flex;  
   gap: 30px;
@@ -109,6 +116,10 @@
   .navbar .navbar-box .logo h1 {
     font-size: 34px;
   }
+
+  .navbar .navbar-box .logo .logo-title {
+    font-size: 34px;
+}
 
   .navbar-box .menu {
     display: flex;
